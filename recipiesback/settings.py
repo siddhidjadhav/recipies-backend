@@ -131,12 +131,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-
-
-    'recipiesapp.s3-website.us-east-2.amazonaws.com',
-    
-    
-    # Add any other domains or IPs you need
-
-
+    'http://localhost:3000',  # Your React app
+    'http://recipiesapp.s3-website.us-east-2.amazonaws.com',  # Your deployed site
 ]
