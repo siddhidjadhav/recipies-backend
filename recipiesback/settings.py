@@ -127,5 +127,14 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    ALLOWED_HOSTS = [
+
+    'recipiesapp.s3-website.us-east-2.amazonaws.com',
+    '3.21.231.205',  # Add your IP address here
+    'localhost',
+    '127.0.0.1',
+    
+    # Add any other domains or IPs you need
+]
+
 ]
